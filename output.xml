@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.6 on linux)" generated="2025-02-14T16:22:05.187635" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/home/aelita/Projects/robot_selenium/tests.robot">
+<test id="s1-t1" name="Valid Login" line="8">
+<kw name="Open Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-14T16:22:05.319629" level="INFO">Opening browser 'chrome' to base url 'https://makeup.se/'.</msg>
+<arg>https://makeup.se/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-14T16:22:05.319439" elapsed="2.996732"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-14T16:22:08.316546" elapsed="0.411854"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-14T16:22:08.729685" level="INFO">Clicking element 'xpath://div[@class='header-office']'.</msg>
+<arg>xpath://div[@class='header-office']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-14T16:22:08.728776" elapsed="1.727539"/>
+</kw>
+<status status="PASS" start="2025-02-14T16:22:05.318778" elapsed="5.140442"/>
+</kw>
+<kw name="Type Username">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-14T16:22:10.461246" level="INFO">Typing text 'aelita2012@gmail.com' into text field 'xpath=//*[@name='user_login']'.</msg>
+<arg>xpath=//*[@name='user_login']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-14T16:22:10.460817" elapsed="0.387894"/>
+</kw>
+<arg>aelita2012@gmail.com</arg>
+<status status="PASS" start="2025-02-14T16:22:10.459522" elapsed="0.391302"/>
+</kw>
+<kw name="Type Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-14T16:22:10.852501" level="INFO">Typing text 'MakeupSe32' into text field 'xpath=//*[@name='user_pw']'.</msg>
+<arg>xpath=//*[@name='user_pw']</arg>
+<arg>${userpassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-14T16:22:10.852266" elapsed="0.348990"/>
+</kw>
+<arg>MakeupSe32</arg>
+<status status="PASS" start="2025-02-14T16:22:10.851360" elapsed="0.353372"/>
+</kw>
+<kw name="Submit">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-14T16:22:11.208690" level="INFO">Clicking element 'xpath=//button[contains(text(),'logga in')]'.</msg>
+<arg>xpath=//button[contains(text(),'logga in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-14T16:22:11.208131" elapsed="0.474819"/>
+</kw>
+<status status="PASS" start="2025-02-14T16:22:11.205981" elapsed="0.478536"/>
+</kw>
+<status status="PASS" start="2025-02-14T16:22:05.318295" elapsed="6.366501"/>
+</test>
+<status status="PASS" start="2025-02-14T16:22:05.188672" elapsed="6.496736"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

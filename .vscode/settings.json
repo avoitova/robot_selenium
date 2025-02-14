@@ -1,0 +1,11 @@
+{
+    "robot.pythonpath": [
+        "${workspaceFolder}",  // Makes sure VS Code finds local Python files
+        "${workspaceFolder}/libraries",  // Example if you store custom libs in "libraries" folder
+    ],
+    "robot.language-server.python": "${workspaceFolder}/.venv/bin/python",  // Set your Python interpreter
+    "robot.lint.robocop.enabled": true,  // Enable linting for better suggestions
+    "robot.variables": {  // You can define global variables here if needed
+        "ENV": "test"
+    }
+}
